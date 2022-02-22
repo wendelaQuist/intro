@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100vw;
     color: white;
+    overflow: hidden;
 }
 
 body{
@@ -62,7 +63,7 @@ h1{
 .sleeping{
     background-image: url(./eyes-closed.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     animation: zoom-in 12s ease-in;
     animation-fill-mode: forwards;
@@ -89,7 +90,7 @@ h1{
 
 .bg{
     position: relative;
-    animation: zoom-out 5s linear;
+    animation: zoom-out-part 5s linear;
     animation-fill-mode: forwards;
     z-index: -1;
     top: 0;
@@ -99,15 +100,44 @@ h1{
 .robe{
     position: absolute;
     left: 50%;
+    top: 1rem;
     transform: translateX(-50%);
-    height: 90%;
 }
 
-@keyframes zoom-out{
+@keyframes zoom-out-part{
     0%{
-        scale: 2;
+        scale: 3;
+    }
+    50%{
+        scale: 2.5;
     }
     100%{
         scale: 1;
     }
 }
+
+#fifth-shot{
+    display: none;
+}
+
+#livingroom{
+    position: absolute;
+    animation: slide 4s linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+
