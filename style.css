@@ -109,7 +109,7 @@ h1{
         scale: 3;
     }
     50%{
-        scale: 2.5;
+        scale: 2;
     }
     100%{
         scale: 1;
@@ -122,7 +122,21 @@ h1{
 
 #livingroom{
     position: absolute;
-    animation: slide 4s linear;
+    animation: slide 13s linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+#kitchen{
+    position: absolute;
+    animation: slide2 24s linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+}
+
+#supermarket{
+    position: absolute;
+    animation: slide3 22s linear;
     animation-fill-mode: forwards;
     z-index: -1;
 }
@@ -131,13 +145,27 @@ h1{
     0%{
         left: 0;
     }
-    50%{
-        left: 50%;
-    }
+
     100%{
         left: 100%;
     }
 }
+@keyframes slide2{
+    0%{
+        left: -100%;
+    }
 
+    100%{
+        left: 100%;
+    }
+}
+@keyframes slide3{
+    0%{
+        left: -200%;
+    }
 
+    100%{
+        left: 0;
+    }
+}
 

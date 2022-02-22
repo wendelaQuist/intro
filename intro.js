@@ -6,7 +6,7 @@ setTimeout(function(){
 
 setTimeout(function(){
     document.getElementById('third-shot').style.display = 'flex';
-}, 12010)
+}, 12000)
 
 setTimeout(function(){
     document.getElementById('third-shot').style.display = 'none';
@@ -14,12 +14,12 @@ setTimeout(function(){
 
 setTimeout(function(){
     document.getElementById('fourth-shot').style.display = 'flex';
-}, 14010)
+}, 14000)
 
 setTimeout(function(){
     document.getElementById('fourth-shot').style.display = 'none';
-}, 16000)
+}, 18000)
 
 setTimeout(function(){
     document.getElementById('fifth-shot').style.display = 'flex';
-}, 17000)
+}, 18000)
