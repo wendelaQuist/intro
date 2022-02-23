@@ -28,25 +28,21 @@ body{
 }
 
 .house{
-    background-image: url(./Home.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     align-items: center;
     animation: zoom-in 5s linear;
     animation-fill-mode: forwards;
+    background-image: url(./Home.jpg);
+    background-position: center;
 }
 
 @keyframes zoom-in {
     0% {
-      transform: scale(1);
+      transform: scale(1.1);
     }
     100% {
-      transform: scale(1.9);
+      transform: scale(1.5);
     }
-  }
+}
 
 .text1{
     position: absolute;
@@ -141,63 +137,6 @@ h1{
     animation: slide3 10s linear;
     animation-fill-mode: forwards;
     z-index: -1;
-}
-
-.blured-circle{
-    position: absolute;
-	border-radius: 100%;
-	background-color: white;		
-    filter: blur(1.2vmax);
-	top: 0vh;
-	left: 0vw;
-	width: 5vmax;
-	height: 5vmax;
-    animation: appear 1s linear;
-    animation-delay: 9s;
-    animation-fill-mode: forwards;
-}
-
-.blured-circle2{
-    position: absolute;
-	border-radius: 100%;
-	background-color: white;		
-    filter: blur(1.2vmax);
-	top: 45vh;
-	left: 0vw;
-	width: 15vmax;
-	height: 15vmax;
-    animation: appear 2s linear;
-    animation-delay: 9s;
-    animation-fill-mode: forwards;
-}
-
-.blured-circle3{
-    position: absolute;
-	border-radius: 100%;
-	background-color: white;		
-    filter: blur(1.2vmax);
-	top: 90vh;
-	left: 0vw;
-	width: 10vmax;
-	height: 10vmax;
-    animation: appear 3s linear;
-    animation-delay: 9s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes appear{
-    0%{
-        scale: 0;
-    }
-    25%{
-        scale: 5;
-    }
-    75%{
-        scale: 0;
-    }
-    100%{
-        scale: 5;
-    }
 }
 
 @keyframes slide{
@@ -547,13 +486,13 @@ h1{
 
 .sunbathing{
     position: absolute;
-    animation: rotate-zoom-out 8s ease-out;
+    animation: rotate-zoom-out 10s ease-out;
     animation-fill-mode: forwards;
 }
 
 @keyframes rotate-zoom-out{
     0%{
-        transform: rotate(45deg);
+        transform: rotate(60deg);
         scale: 5;
     }
     100%{
