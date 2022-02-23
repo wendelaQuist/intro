@@ -143,6 +143,63 @@ h1{
     z-index: -1;
 }
 
+.blured-circle{
+    position: absolute;
+	border-radius: 100%;
+	background-color: white;		
+    filter: blur(1.2vmax);
+	top: 0vh;
+	left: 0vw;
+	width: 5vmax;
+	height: 5vmax;
+    animation: appear 1s linear;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+.blured-circle2{
+    position: absolute;
+	border-radius: 100%;
+	background-color: white;		
+    filter: blur(1.2vmax);
+	top: 45vh;
+	left: 0vw;
+	width: 15vmax;
+	height: 15vmax;
+    animation: appear 2s linear;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+.blured-circle3{
+    position: absolute;
+	border-radius: 100%;
+	background-color: white;		
+    filter: blur(1.2vmax);
+	top: 90vh;
+	left: 0vw;
+	width: 10vmax;
+	height: 10vmax;
+    animation: appear 3s linear;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+    0%{
+        scale: 0;
+    }
+    25%{
+        scale: 5;
+    }
+    75%{
+        scale: 0;
+    }
+    100%{
+        scale: 5;
+    }
+}
+
 @keyframes slide{
     0%{
         left: 0;
@@ -180,11 +237,20 @@ h1{
 
 .clubbing{
     position: relative;
-    animation: zoom-out-part 10s linear;
+    animation: zooming-out 2s linear;
     animation-fill-mode: forwards;
     z-index: -1;
     top: 0;
     left: 0;
+}
+
+@keyframes zooming-out{
+    0%{
+        scale: 2;
+    }
+    100%{
+        scale: 0.7;
+    }
 }
 
 .tux{
@@ -320,9 +386,9 @@ h1{
     opacity: 0.5;
     animation: bubble 15s ease-in-out infinite,
       sideWays 4s ease-in-out infinite alternate;
-  }
+}
   
-  @keyframes bubble {
+@keyframes bubble {
     0% {
       transform: translateY(0%);
       opacity: 0.06;
@@ -330,79 +396,79 @@ h1{
     100% {
       transform: translateY(-120vh);
     }
-  }
+}
   
-  @keyframes sideWays {
+@keyframes sideWays {
     0% {
       margin-left: 0px;
     }
     100% {
       margin-left: 200px;
     }
-  }
+}
   
-  .bubble--1 {
+.bubble--1 {
     left: 10%;
     animation-delay: 0.5s;
     animation-duration: 16s;
     opacity: 0.2;
-  }
+}
   
-  .bubble--2 {
+.bubble--2 {
     width: 20px;
     height: 20px;
     left: 40%;
     animation-delay: 1s;
     animation-duration: 10s;
     opacity: 0.1;
-  }
+}
   
-  .bubble--3 {
+.bubble--3 {
     width: 15px;
     height: 15px;
     left: 30%;
     animation-delay: 5s;
     animation-duration: 20s;
     opacity: 0.3;
-  }
+}
   
-  .bubble--4 {
+.bubble--4 {
     width: 30px;
     height: 30px;
     left: 40%;
     animation-delay: 8s;
     animation-duration: 17s;
     opacity: 0.2;
-  }
+}
   
-  .bubble--5 {
+.bubble--5 {
     width: 35px;
     height: 35px;
     left: 60%;
     animation-delay: 10s;
     animation-duration: 15s;
     opacity: 0.1;
-  }
+}
   
-  .bubble--6 {
+.bubble--6 {
     width: 15px;
     height: 15px;
     left: 80%;
     animation-delay: 3s;
     animation-duration: 30s;
     opacity: 0.4;
-  }
+}
   
-  .bubble--7 {
+.bubble--7 {
     width: 20px;
     height: 20px;
     left: 90%;
     animation-delay: -7s;
     animation-duration: 25s;
     opacity: 0.3;
-  }
+}
   
-  .bubble--9 {
+.bubble--9 {
     width: 25px;
     height: 25px;
     left: 50%;
@@ -410,9 +476,9 @@ h1{
     animation-delay: -5s;
     animation-duration: 19s;
     opacity: 0.2;
-  }
+}
   
-  .bubble--10 {
+.bubble--10 {
     width: 45px;
     height: 45px;
     left: 30%;
@@ -420,9 +486,9 @@ h1{
     animation-delay: -21s;
     animation-duration: 16s;
     opacity: 0.3;
-  }
+}
   
-  .bubble--11 {
+.bubble--11 {
     width: 35px;
     height: 35px;
     left: 60%;
@@ -430,9 +496,9 @@ h1{
     animation-delay: -13.75s;
     animation-duration: 20s;
     opacity: 0.3;
-  }
+}
   
-  .bubble--11 {
+.bubble--11 {
     width: 30px;
     height: 30px;
     left: 90%;
@@ -440,5 +506,58 @@ h1{
     animation-delay: -10.5s;
     animation-duration: 19s;
     opacity: 0.3;
-  }
+}
 
+#eleventh-shot{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.underwater{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hand{
+    position: absolute;
+    animation: hand 5s ease-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+@keyframes hand {
+    0% {
+      margin-top: 100%;
+    }
+    100% {
+      margin-top: 0%;
+    }
+}
+
+#twelfth-shot{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.sunbathing{
+    position: absolute;
+    animation: rotate-zoom-out 8s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate-zoom-out{
+    0%{
+        transform: rotate(45deg);
+        scale: 5;
+    }
+    100%{
+        transform: rotate(0deg);
+        scale: 1;
+    }
+}
