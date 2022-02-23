@@ -17,6 +17,11 @@ body{
 #first-shot{
     animation: disappear 0s ease-in 5s;
     animation-fill-mode: forwards;
+    display: none;
+}
+
+.button{
+    display:flex;
 }
 
 @keyframes disappear{
